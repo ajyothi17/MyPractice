@@ -1,0 +1,25 @@
+[  522.933690] usb 1-6: USB disconnect, device number 3
+[  522.933723] in func - uvc_disconnect, in file - drivers/media/usb/uvc/uvc_driver.c
+[  522.933724] in func - uvc_unregister_video, in file - drivers/media/usb/uvc/uvc_driver.c
+[  522.933819] in func - uvc_release, in file - drivers/media/usb/uvc/uvc_driver.c
+[  522.933820] in func - uvc_debugfs_cleanup_stream, in file - drivers/media/usb/uvc/uvc_debugfs.c
+[  522.933827] in func - uvc_delete, in file - drivers/media/usb/uvc/uvc_driver.c
+[  522.933828] in func - uvc_status_cleanup, in file - drivers/media/usb/uvc/uvc_status.c
+[  522.933829] in func - uvc_input_cleanup, in file - drivers/media/usb/uvc/uvc_status.c
+[  522.973311] in func - uvc_ctrl_cleanup_device, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973313] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973313] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973314] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973315] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973315] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973316] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973316] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973317] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973317] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973318] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973318] in func - uvc_ctrl_cleanup_mappings, in file - drivers/media/usb/uvc/uvc_ctrl.c
+[  522.973365] in func - uvc_mc_cleanup_entity, in file - drivers/media/usb/uvc/uvc_entity.c
+[  522.973366] in func - uvc_mc_cleanup_entity, in file - drivers/media/usb/uvc/uvc_entity.c
+[  522.973366] in func - uvc_mc_cleanup_entity, in file - drivers/media/usb/uvc/uvc_entity.c
+[  522.973367] in func - uvc_mc_cleanup_entity, in file - drivers/media/usb/uvc/uvc_entity.c
+[  522.973370] in func - uvc_disconnect, in file - drivers/media/usb/uvc/uvc_driver.c

@@ -1,0 +1,1 @@
+cmd_/home/jyothi/Platform/DomainAssign/DeviceDriver/SimpleBuffer/SimpleBuffer.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/jyothi/Platform/DomainAssign/DeviceDriver/SimpleBuffer/SimpleBuffer.ko /home/jyothi/Platform/DomainAssign/DeviceDriver/SimpleBuffer/SimpleBuffer.o /home/jyothi/Platform/DomainAssign/DeviceDriver/SimpleBuffer/SimpleBuffer.mod.o

@@ -1,0 +1,156 @@
+
+Main features:
+C++
+C++11
+Design patterns
+STL
+UML diagrams
+k
+C++ will run on 3 ptrs(TVS)
+this ptr
+virtual ptr
+smart ptr(unqiue,shared,weak,auto(deprecated))
+
+Types of relationships:
+Composition
+Association
+Aggregation
+Inheritance
+
+UML diagrams
+class diagram
+Sequence "
+use case
+state machine "
+
+Class
+default memebers:
+cons
+copy cons
+assignment operator
+dest
+
+intializer list for cons,copy const
+syntax for copy cons and assign operator [ without const and reference]
+How do you intialize const and ref members variable in a class?( use initializer list)
+
+
+this ptr
+object
+Polymorphism
+Compile time
+function overloading
+constructor overloading
+operator overloading
+
+Run time
+function overriding(virtual functions)
+vptr,vtable
+
+Inheritance
+single
+multiple (What is the problem with multiple inheritance)
+multilevel
+hieararchial
+hybrid (special case Diamond, How do you resolve this)
+Abstraction
+Encapsulation
+
+Base to Derived member behaviour in Dervied using publc,private,protected(Access specifiers)
+
+Abstract class
+Interface class
+virtual class
+
+new operator
+delete operator
+
+Diff reference vs ptr
+
+C++11 features
+nullptr
+uniform initialization
+lambda expressions
+default
+delete
+final 
+override
+delegated
+bind
+functor
+constexpr
+auto
+range based
+tuple
+move constructor,move assignment operator
+
+Design patterns:(POSAF)
+Singleton
+Factory
+Abstract factory
+proxy
+adapter
+Observer
+
+STL
+sequential containers
+vector,deque,list
+
+associative containers
+set,multiset
+map,multimap
+Hashing:
+unordered_set
+unordered_map
+
+iterators:
+iterator
+reverse_iterator
+
+algorithms:
+find,
+count,
+search,
+sort,
+
+
+
+static members scope in class
+
+
+
+xplicit
+assert
+
+virtual concepts:
+virtual cons(does not exist,but we can achieve using factory design pattern)
+virtual des
+virtual class
+virtual function
+pure virtual func
+virtual ptr
+virtual table
+
+vtable,vptr mapping diagram using static array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

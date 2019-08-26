@@ -1,0 +1,31 @@
+===========================================================W^H -> UVC Camera==================================================================
+1. UVC (USB device Video Class) define the devices capable of video streaming functionality on USB.
+2. 
+
+
+============================================Initiialization of Video driver=====================================================
+1. videodev_init()
+	-> This function initializes the video for linux
+
+	-> video registers with major number 81
+
+	-> register_chrdev_region(dev, VIDEO_NUM_DEVICES, VIDEO_NAME)
+		* registers the video device in the given range(here -> 81 to (81 + 256))
+			dev -> initialized with major no. 81 n minor no. 0
+			VIDEO_NUM_DEVICES -> 256
+			VIDEO_NAME -> video4linux
+
+		* this in turn calls __register_chrdev_region(MAJOR(n), MINOR(n), next - n, name)
+			n -> ranges from 81 to (81 + 256)
+			next -> MKDEV(MAJOR(n) + 1, 0)
+		
+	-> create a sysfs entry for video device using class_register(&video_class)
+		struct class video_class = {
+			.name = VIDEO_NAME,
+			.dev_groups = video_device_groups,	
+		}
+		
+		A class is used as an abstract to hide all the low level implementation details.
+		Classes allow user space to work with devices based on what they do, rather than how they are connected or how they work.
+		dev_groups: Default attributes of the devices that belong to the class.
+

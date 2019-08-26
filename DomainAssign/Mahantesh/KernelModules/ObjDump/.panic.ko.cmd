@@ -1,0 +1,1 @@
+cmd_/home/jyothi/Training/Domain/Mahantesh/KernelModules/ObjDump/panic.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/jyothi/Training/Domain/Mahantesh/KernelModules/ObjDump/panic.ko /home/jyothi/Training/Domain/Mahantesh/KernelModules/ObjDump/panic.o /home/jyothi/Training/Domain/Mahantesh/KernelModules/ObjDump/panic.mod.o ;  true
