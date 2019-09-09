@@ -10,6 +10,7 @@
 #define ROTATE_RIGHT(num, rot) ((num >> rot) | (num << (MSIZE - rot))) //rotate bits right, rot no. of times
 #define ROTATE_LEFT(num, rot) ((num << rot) | (num >> (MSIZE - rot))) //rotate bits left, rot no. of times
 #define TOGGLE_CHAR(ch) ch ^ 32
+#define ODD_EVEN(num) (num & 1) ? printf("ODD\n") : printf("EVEN\n");
 
 //to print in binary
 void print_binary(int num)
@@ -209,5 +210,8 @@ int main(void)
 	printf("upper of a : %c\n", TOGGLE_CHAR('a'));
 	printf("lower of A : %c\n", TOGGLE_CHAR('A'));
 
+	ODD_EVEN(10);
+	ODD_EVEN(15);
+	
 	return EXIT_SUCCESS;
 }
