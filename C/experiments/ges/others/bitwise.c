@@ -7,6 +7,8 @@
 #define MAX(num1, num2) num1 ^ ((num1 ^ num2) & -(num1 < num2)) // maximum of two nums
 #define MIN(num1, num2) num2 ^ ((num1 ^ num2) & -(num1 < num2)) // minimum of two nums
 #define CLEAR_RIGHT_SET_BIT(num) num & (num - 1) //clear the rightmost set bit
+#define ROTATE_RIGHT(num, rot) ((num >> rot) | (num << (MSIZE - rot))) //rotate bits right, rot no. of times
+#define ROTATE_LEFT(num, rot) ((num << rot) | (num >> (MSIZE - rot))) //rotate bits left, rot no. of times
 
 //to print in binary
 void print_binary(int num)
@@ -197,6 +199,11 @@ int main(void)
 	print_binary(15);
 	printf("after set_bit(45, 3, 4, 15) : ");
 	print_binary(set_bit(45, 3, 4, 15));
+
+	printf("left rotate of 15, 2 times : ");
+	print_binary(ROTATE_LEFT(15, 2));
+	printf("right rotate of 15, 2 times : ");
+	print_binary(ROTATE_RIGHT(15, 2));
 
 	return EXIT_SUCCESS;
 }
