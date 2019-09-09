@@ -9,6 +9,7 @@
 #define CLEAR_RIGHT_SET_BIT(num) num & (num - 1) //clear the rightmost set bit
 #define ROTATE_RIGHT(num, rot) ((num >> rot) | (num << (MSIZE - rot))) //rotate bits right, rot no. of times
 #define ROTATE_LEFT(num, rot) ((num << rot) | (num >> (MSIZE - rot))) //rotate bits left, rot no. of times
+#define TOGGLE_CHAR(ch) ch ^ 32
 
 //to print in binary
 void print_binary(int num)
@@ -204,6 +205,9 @@ int main(void)
 	print_binary(ROTATE_LEFT(15, 2));
 	printf("right rotate of 15, 2 times : ");
 	print_binary(ROTATE_RIGHT(15, 2));
+
+	printf("upper of a : %c\n", TOGGLE_CHAR('a'));
+	printf("lower of A : %c\n", TOGGLE_CHAR('A'));
 
 	return EXIT_SUCCESS;
 }
