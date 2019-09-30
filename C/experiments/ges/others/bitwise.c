@@ -2,19 +2,47 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define MSIZE (sizeof(int) * 8)
-#define BIT_AT_POS(num, bit_pos) (num >> bit_pos) & 1  //to find the bit at given pos
-#define FLIPPED_BITS(num1, num2) countSetBits(num1 ^ num2) //to find the count of flipped bits
-#define MAX(num1, num2) num1 ^ ((num1 ^ num2) & -(num1 < num2)) // maximum of two nums
-#define MIN(num1, num2) num2 ^ ((num1 ^ num2) & -(num1 < num2)) // minimum of two nums
-#define CLEAR_RIGHT_SET_BIT(num) num & (num - 1) //clear the rightmost set bit
-#define ROTATE_RIGHT(num, rot) ((num >> rot) | (num << (MSIZE - rot))) //rotate bits right, rot no. of times
-#define ROTATE_LEFT(num, rot) ((num << rot) | (num >> (MSIZE - rot))) //rotate bits left, rot no. of times
+# ifndef	__BITWISE__
+# define	__BITWISE__
+
+/* Assign the Maximum value of the integer */
+#define	MSIZE (sizeof(int) * 8)
+
+/* Mask the odd bit's in the given number */
+#define	O_MASK 0xAAAAAAAA
+
+/* Mask the even bit's of the given number */
+#define	E_MASK 0x55555555
+
+/* to find the bit at given pos */
+#define BIT_AT_POS(num, bit_pos) (num >> bit_pos) & 1
+
+/*to find the count of flipped bits*/
+#define FLIPPED_BITS(num1, num2) countSetBits(num1 ^ num2)
+
+/* maximum of two nums */
+#define MAX(num1, num2) num1 ^ ((num1 ^ num2) & -(num1 < num2))
+
+/* minimum of two nums */
+#define MIN(num1, num2) num2 ^ ((num1 ^ num2) & -(num1 < num2))
+
+/* clear the rightmost set bit */
+#define CLEAR_RIGHT_SET_BIT(num) num & (num - 1)
+
+/* rotate bits right, rot no. of times */
+#define ROTATE_RIGHT(num, rot) ((num >> rot) | (num << (MSIZE - rot)))
+
+/* rotate bits left, rot no. of times */
+#define ROTATE_LEFT(num, rot) ((num << rot) | (num >> (MSIZE - rot)))
+
+/* toggle char small to cap and vice - versa */
 #define TOGGLE_CHAR(ch) ch ^ 32
+
+/* check odd or even */
 #define ODD_EVEN(num) (num & 1) ? printf("ODD\n") : printf("EVEN\n");
+
+/* modulo operation for 2 and pow of 2 */
 #define MOD_2(num, power) (num) & ((int)pow(2, power) - 1)
-#define MOD_8(num, power) (num) & ((int)pow(8, power) - 1)
-#define MOD_16(num, power) (num) & ((int)pow(16, power) - 1)
 
 //to print in binary
 void print_binary(int num)
@@ -218,8 +246,8 @@ int main(void)
 	ODD_EVEN(15);
 
 	printf("%d\n", MOD_2(15, 1));	
-	printf("%d\n", MOD_8(15, 1));	
-	printf("%d\n", MOD_16(15, 1));	
 		
 	return EXIT_SUCCESS;
 }
+
+#endif
