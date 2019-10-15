@@ -44,6 +44,12 @@
 /* modulo operation for 2 and pow of 2 */
 #define MOD_2(num, power) (num) & ((int)pow(2, power) - 1)
 
+/*
+ * extract 'n' bits from position 'm'
+ * (or) extract bits from position a to b, m = a, n = a - b + 1
+ */
+#define EXTRACT_BITS(num, m, n) ((1 << n) - 1) & (num >> (m - 1))
+
 //to print in binary
 void print_binary(int num)
 {
@@ -246,7 +252,13 @@ int main(void)
 	ODD_EVEN(15);
 
 	printf("%d\n", MOD_2(15, 1));	
-		
+
+	print_binary(171);
+	print_binary(EXTRACT_BITS(171, 5, 4));
+	
+	int a = 5, b = 5 - 2 + 1;
+	print_binary(EXTRACT_BITS(171, a, b));
+	
 	return EXIT_SUCCESS;
 }
 
