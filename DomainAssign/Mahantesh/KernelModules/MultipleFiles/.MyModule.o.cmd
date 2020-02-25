@@ -1,1 +1,0 @@
-cmd_/home/jyothi/Training/Domain/Mahantesh/KernelModules/MultipleFiles/MyModule.o := ld -m elf_i386   -r -o /home/jyothi/Training/Domain/Mahantesh/KernelModules/MultipleFiles/MyModule.o /home/jyothi/Training/Domain/Mahantesh/KernelModules/MultipleFiles/myInit.o /home/jyothi/Training/Domain/Mahantesh/KernelModules/MultipleFiles/myExit.o 

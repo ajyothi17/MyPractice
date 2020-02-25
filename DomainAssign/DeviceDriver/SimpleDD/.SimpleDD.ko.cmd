@@ -1,1 +1,0 @@
-cmd_/home/jyothi/Training/Domain/DeviceDriver/SimpleDD/SimpleDD.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/jyothi/Training/Domain/DeviceDriver/SimpleDD/SimpleDD.ko /home/jyothi/Training/Domain/DeviceDriver/SimpleDD/SimpleDD.o /home/jyothi/Training/Domain/DeviceDriver/SimpleDD/SimpleDD.mod.o ;  true

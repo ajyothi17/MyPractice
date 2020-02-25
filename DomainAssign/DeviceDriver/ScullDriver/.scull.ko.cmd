@@ -1,1 +1,0 @@
-cmd_/home/jyothi/Training/Domain/DeviceDriver/ScullDriver/scull.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/jyothi/Training/Domain/DeviceDriver/ScullDriver/scull.ko /home/jyothi/Training/Domain/DeviceDriver/ScullDriver/scull.o /home/jyothi/Training/Domain/DeviceDriver/ScullDriver/scull.mod.o ;  true

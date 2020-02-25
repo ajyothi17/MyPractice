@@ -1,1 +1,0 @@
-cmd_/home/jyothi/Training/Domain/DeviceDriver/MultipleFiles/kmod.o := ld -m elf_i386   -r -o /home/jyothi/Training/Domain/DeviceDriver/MultipleFiles/kmod.o /home/jyothi/Training/Domain/DeviceDriver/MultipleFiles/myInit.o /home/jyothi/Training/Domain/DeviceDriver/MultipleFiles/myExit.o 

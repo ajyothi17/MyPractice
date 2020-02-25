@@ -1,1 +1,0 @@
-cmd_/home/jyothi/Training/Domain/DeviceDriver/MultipleFiles/kmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/jyothi/Training/Domain/DeviceDriver/MultipleFiles/kmod.ko /home/jyothi/Training/Domain/DeviceDriver/MultipleFiles/kmod.o /home/jyothi/Training/Domain/DeviceDriver/MultipleFiles/kmod.mod.o ;  true
